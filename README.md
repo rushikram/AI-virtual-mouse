@@ -22,29 +22,6 @@ Click event triggered by pinching (thumb + index finger)
 
 Real-time performance with webcam input
 
-🧰 Dependencies
-Install the required libraries with pip:
-
-bash
-Copy
-Edit
-pip install opencv-python mediapipe pyautogui
-🚀 How to Run
-Clone the Repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/virtual-mouse-handtracking.git
-cd virtual-mouse-handtracking
-Run the Script:
-
-bash
-Copy
-Edit
-python virtual_mouse.py
-A window will open showing the webcam feed. Move your hand to control the mouse.
-
 🖐️ Controls
 Gesture	Action
 Move index finger	Move cursor
