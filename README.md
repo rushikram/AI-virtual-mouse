@@ -3,6 +3,16 @@
 ## Description
 This project implements a virtual mouse control system using hand gestures detected via webcam. It utilizes computer vision techniques with MediaPipe for hand tracking and PyAutoGUI for mouse control. The system allows you to move the cursor and perform clicks by simply moving your index finger and thumb.
 
+
+
+
+##DEMO VID:
+
+
+
+https://github.com/user-attachments/assets/690cb216-811c-4fdd-811c-4d23805326f7
+
+
 ## Features
 - Real-time hand tracking using MediaPipe
 - Cursor movement controlled by index finger position
@@ -10,6 +20,8 @@ This project implements a virtual mouse control system using hand gestures detec
 - Smooth cursor movement across the screen
 - Visual feedback of finger positions on the camera feed
 
+  
+ 
 ## Requirements
 - Python 3.x
 - OpenCV (`cv2`)
@@ -58,10 +70,3 @@ This project implements a virtual mouse control system using hand gestures detec
 - Add gesture recognition for other mouse actions
 - Improve performance and accuracy
 
-## License
-This project is open-source and available under the MIT License.
-
-## Acknowledgments
-- MediaPipe for the excellent hand tracking solution
-- OpenCV for computer vision capabilities
-- PyAutoGUI for mouse control functionality
