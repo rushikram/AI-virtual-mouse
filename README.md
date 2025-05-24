@@ -1,4 +1,4 @@
-# Virtual Mouse Control Using Hand Gestures
+# Virtual Mouse Control .
 
 ## Description
 This project implements a virtual mouse control system using hand gestures detected via webcam. It utilizes computer vision techniques with MediaPipe for hand tracking and PyAutoGUI for mouse control. The system allows you to move the cursor and perform clicks by simply moving your index finger and thumb.
