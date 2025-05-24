@@ -1,54 +1,67 @@
+# Virtual Mouse Control Using Hand Gestures
 
-🖱️ Virtual Mouse Using Hand Tracking
+## Description
+This project implements a virtual mouse control system using hand gestures detected via webcam. It utilizes computer vision techniques with MediaPipe for hand tracking and PyAutoGUI for mouse control. The system allows you to move the cursor and perform clicks by simply moving your index finger and thumb.
 
+## Features
+- Real-time hand tracking using MediaPipe
+- Cursor movement controlled by index finger position
+- Click action triggered by bringing thumb and index finger close together
+- Smooth cursor movement across the screen
+- Visual feedback of finger positions on the camera feed
 
-This project implements a virtual mouse using OpenCV, MediaPipe, and PyAutoGUI. It enables mouse control through hand gestures captured via a webcam.
+## Requirements
+- Python 3.x
+- OpenCV (`cv2`)
+- MediaPipe (`mediapipe`)
+- PyAutoGUI (`pyautogui`)
 
-📹 Demo
+## Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/virtual-mouse.git
+   cd virtual-mouse
+   ```
 
-1.Move your index finger to control the mouse cursor.
+2. Install the required packages:
+   ```bash
+   pip install opencv-python mediapipe pyautogui
+   ```
 
-2.Touch your thumb and index finger together to perform a click.
+## Usage
+1. Run the application:
+   ```bash
+   python virtual_mouse.py
+   ```
 
+2. Position your hand in front of the webcam:
+   - Move your index finger to control cursor position
+   - Bring your thumb and index finger close together to click
+   - Keep fingers apart to move without clicking
 
-https://github.com/user-attachments/assets/13c22803-a6d5-4733-8295-b5ca1ff7d115
+3. Press 'q' to quit the application
 
+## Controls
+- **Cursor Movement**: Move your index finger in the camera view
+- **Click Action**: Bring thumb and index finger close together (distance < 30 pixels)
+- **Exit**: Press 'q' key while the application window is focused
 
+## Notes
+- Works best in well-lit environments
+- Requires a webcam with decent resolution
+- The click action has a 1-second cooldown to prevent multiple rapid clicks
+- For best results, use a plain background and avoid wearing rings or jewelry that might confuse the hand tracking
 
+## Future Improvements
+- Add right-click functionality
+- Implement scrolling gestures
+- Add gesture recognition for other mouse actions
+- Improve performance and accuracy
 
+## License
+This project is open-source and available under the MIT License.
 
-🔧 Features
-
-
-Hand tracking using MediaPipe
-
-Cursor control based on index finger position
-
-Click event triggered by pinching (thumb + index finger)
-
-Real-time performance with webcam input
-
-🖐️ Controls
-
-Gesture	Action
-Move index finger	Move cursor
-Pinch (index + thumb close)	Mouse click
-Press q	Exit program
-
-🛠️ How It Works
-
-MediaPipe Hands detects 21 landmarks per hand.
-
-The index fingertip (landmark 8) is used to move the mouse cursor.
-
-The distance between the index finger and thumb (landmark 4) is measured.
-
-If the distance is less than a threshold (e.g., 30px), a click is triggered.
-
-⚠️ Notes
-
-Works best in well-lit environments.
-
-Only tracks one hand (set with max_num_hands=1).
-
-Cursor movement may vary slightly depending on your screen resolution.
+## Acknowledgments
+- MediaPipe for the excellent hand tracking solution
+- OpenCV for computer vision capabilities
+- PyAutoGUI for mouse control functionality
